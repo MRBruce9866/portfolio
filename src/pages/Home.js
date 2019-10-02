@@ -45,7 +45,9 @@ export class Home extends Component {
     return (
       <>
         <Container id='about' className='container info'>
-          <h1 className='text-center mainHeading my-5'>About</h1>
+          <Fade>
+            <h1 className='text-center mainHeading my-5'>About</h1>
+          </Fade>
 
           <p className='about-me'>
             <img className='profilePic' alt='Profile' src={require('../assets/images/profilePicture.png')} />
@@ -66,10 +68,72 @@ export class Home extends Component {
             coding a short program. Soon after, I tried my hand at learning Java through various online tutorials and I
             was hooked.
           </p>
+
+          <h1 className='mainHeading text-center mt-5'>Skills</h1>
+          <div className='row justify-content-center'>
+            <div className='col-6'>
+              <ul className='skills'>
+                <li>
+                  <h4>JavaScript</h4>
+                </li>
+                <li>
+                  <h4>Java</h4>
+                </li>
+                <li>
+                  <h4>HTML</h4>
+                </li>
+                <li>
+                  <h4>Cascading Style Sheets (CSS)</h4>
+                </li>
+                <li>
+                  <h4>Git</h4>
+                </li>
+                <li>
+                  <h4>React.js</h4>
+                </li>
+                <li>
+                  <h4>Node.js</h4>
+                </li>
+                <li>
+                  <h4>REST</h4>
+                </li>
+              </ul>
+            </div>
+            <div className='col-6'>
+              <ul className='skills'>
+                <li>
+                  <h4>MongoDB</h4>
+                </li>
+                <li>
+                  <h4>MERN Stack</h4>
+                </li>
+                <li>
+                  <h4>Sequelize.js</h4>
+                </li>
+                <li>
+                  <h4>jQuery</h4>
+                </li>
+                <li>
+                  <h4>C#</h4>
+                </li>
+                <li>
+                  <h4>Bootstrap</h4>
+                </li>
+                <li>
+                  <h4>SQL</h4>
+                </li>
+                <li>
+                  <h4>NoSQL</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
         </Container>
 
         <Container id='projects' className='container projects'>
-          <h1 className='text-center mainHeading my-3'>Projects</h1>
+          <Fade>
+            <h1 className='text-center mainHeading my-3'>Projects</h1>
+          </Fade>
 
           <div className='row'>
             {this.state.projects
@@ -92,7 +156,9 @@ export class Home extends Component {
           </div>
         </Container>
         <Container id='contact' className='container contact text-center my-5'>
-          <h1 className='text-center mainHeading my-5'>Contact</h1>
+          <Fade>
+            <h1 className='text-center mainHeading my-5'>Contact</h1>
+          </Fade>
           <h3 className='subHeading mt-5'>Email</h3>
           <h5>mrbruce9866@gmail.com</h5>
           <h3 className='subHeading mt-5'>Phone</h3>

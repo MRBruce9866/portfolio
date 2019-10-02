@@ -122,7 +122,16 @@ body{
   background: #fff2;
 }
 
-#about{
-  padding-top: 5%;
-  min-height: 90vh;
+#about, #projects, #contact{
+  padding-top: 3%;
+  min-height: 100vh;
+}
+
+.skills{
+  list-style: circle;
+}
+
+.skills, .skills li, li h5{
+  margin: 0 auto;
+  width: fit-content;
 }
