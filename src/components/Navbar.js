@@ -2,10 +2,8 @@ import React from 'react'
 
 export default function Navbar () {
   return (
-    <nav className='navbar navbar-expand-lg myNavbar'>
-      <a className='navbar-brand' href='#'>
-        Markus R. Bruce
-      </a>
+    <nav className='navbar navbar-expand-lg myNavbar fixed-top'>
+      <h1 className='mx-5'>Markus R. Bruce</h1>
       <button
         className='navbar-toggler'
         type='button'
@@ -17,10 +15,20 @@ export default function Navbar () {
         <span className='navbar-toggler-icon' />
       </button>
       <div className='collapse navbar-collapse' id='navbarNav'>
-        <ul className='navbar-nav'>
+        <ul className='navbar-nav nav-pills'>
           <li className='nav-item active'>
-            <a className='nav-link' href='#'>
-              Home <span className='sr-only'>(current)</span>
+            <a className='nav-link' href='#about'>
+              Home
+            </a>
+          </li>
+          <li className='nav-item'>
+            <a className='nav-link' href='#projects'>
+              Projects
+            </a>
+          </li>
+          <li className='nav-item'>
+            <a className='nav-link' href='#contact'>
+              Contact
             </a>
           </li>
         </ul>

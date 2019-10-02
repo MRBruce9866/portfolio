@@ -6,6 +6,7 @@
 body{
   color: #fff;
   font-family: 'Righteous', cursive;
+  text-shadow: 1px 1px #000, -1px -1px #000, -1px 1px #000, 1px -1px #000;
   background: linear-gradient(#0007,#0007), url(./assets/images/dark-honeycomb.png);
 }
 
@@ -14,15 +15,10 @@ body{
   min-height: calc(100vh - 50px);
 }
 
-.info{
-  height: 500px;
-}
+
 
 .projects{
-}
-
-.myNavbar{
-  background: #33f5;
+  min-height: 100vh;
 }
 
 .footer{
@@ -40,11 +36,11 @@ body{
 .projectCard{
   
   font-size: 1.2rem;
-  text-shadow: 1px 1px #000, -1px -1px #000, -1px 1px #000, 1px -1px #000;
+  
   border: 2px solid white;
   border-radius: 10px;
   overflow: hidden;
-  background: #0003;
+  background: #0005;
 }
 
 .projectCard .title{
@@ -56,11 +52,77 @@ body{
   background: #00f5;
 }
 
-.heading{
+.subHeading{
+  margin: 15px 0;
   font-size: 1.5rem;
   text-decoration: underline;
 }
 
-.contributors{
-  /* transform: rotate(-5deg); */
+.mainHeading{
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.myNavbar{
+  color: #fff;
+  background: #005;
+  border-bottom: black;
+}
+
+.myNavbar a{
+  display: inline;
+  margin: 0 10px;
+  color: #ddd;
+  font-size: 1.5rem;
+  
+}
+
+.myNavbar a:hover{
+  color: #aaa;
+}
+
+.myNavbar a:{
+  color: #000;
+}
+
+.profilePic{
+  float: left;
+  width: 200px;
+  margin:  5px 20px;
+}
+
+.about-me{
+  font-size: 1.3rem;
+}
+
+.playButton{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+
+}
+
+.gitButton{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+
+}
+
+.myButton{
+  color: white;
+  text-shadow: 1px 1px #000, -1px -1px #000, -1px 1px #000, 1px -1px #000;
+  background: linear-gradient(#0007,#0007), url(./assets/images/dark-honeycomb.png);
+  margin: 20px 20px;
+  background: #fff5;
+
+}
+
+.myButton:hover{
+  background: #fff2;
+}
+
+#about{
+  padding-top: 5%;
+  min-height: 90vh;
 }
