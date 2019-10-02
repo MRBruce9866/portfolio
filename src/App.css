@@ -1,22 +1,66 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  color: #fff;
+  font-family: 'Righteous', cursive;
+  background: linear-gradient(#0007,#0007), url(./assets/images/dark-honeycomb.png);
 }
 
-.App-logo {
-  height: 40vmin;
+.content{
+ 
+  min-height: calc(100vh - 50px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.info{
+  height: 500px;
+}
+
+.projects{
+}
+
+.myNavbar{
+  background: #33f5;
+}
+
+.footer{
+  background: #0025;
+  height: 50px;
+}
+
+.contributors ul{
+  list-style: none;
+}
+.contributors li{
+  display: inline;
+}
+
+.projectCard{
+  
+  font-size: 1.2rem;
+  text-shadow: 1px 1px #000, -1px -1px #000, -1px 1px #000, 1px -1px #000;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0003;
+}
+
+.projectCard .title{
+  font-weight: bold;
+  padding: 10px 15px;
   color: white;
+  font-size: 2rem;
+  border-bottom: 2px solid white;
+  background: #00f5;
 }
 
-.App-link {
-  color: #09d3ac;
+.heading{
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.contributors{
+  /* transform: rotate(-5deg); */
 }
